@@ -9,7 +9,7 @@ Home Page
 
 ![dashboard](https://github.com/amrithag8/Movies-Dashboard/assets/127708115/c8ea3434-da5e-4926-bbe0-670b3dd2731d)
 
-Movies can be edited, deleted or added to watch later from dashboard.
+In the home page, all the list of movies along with the image, title, ratings, genre are given. Movies can be edited, deleted or added to watch later from dashboard.
 
 Add Movie Page
 
@@ -23,7 +23,7 @@ Genres Page
 
 ![genres](https://github.com/amrithag8/Movies-Dashboard/assets/127708115/1be40467-0ca0-4ba4-8da3-3e5d4186169e)
 
-Here new genre can be added or existing genres can be edited.
+Here new genre can be added and existing genres can be edited or deleted. 
 
 Watch later Page
 Once user has logged in, they can add their favourite movies to watch later page. Further the movies can be deleted after watching.
@@ -31,12 +31,12 @@ Once user has logged in, they can add their favourite movies to watch later page
 Login Page
 ![login](https://github.com/amrithag8/Movies-Dashboard/assets/127708115/42e85d5d-8421-40e0-ac8b-4f215de5c962)
 
-User can login using their registered email and password. If not registered there is naviagtion to Sign Up page. 
+User can login using their registered email and password. If not registered there is naviagtion to Sign Up page. if username/ password is right they will be taken to home page successfully else error message shows. 
 
 Sign Up Page
 ![signup](https://github.com/amrithag8/Movies-Dashboard/assets/127708115/40d715b7-8d97-467f-bd15-15dbdbb08171)
 
-User can register by giving their details and by giving a password. 
+User can register by giving their details and by creating a password. 
 
 Working video
 
