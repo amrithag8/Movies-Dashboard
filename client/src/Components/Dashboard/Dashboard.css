@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.dashboard img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.fa-star {
+  color: #f5c71a;
+}
+
+.genres-title {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.star-count {
+  margin-left: 5px;
+}
+.genres-list {
+  width: 100%;
+  max-width: 90px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 6px;
+  padding: 10px;
+}
+
+.dashboard h2 {
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  min-height: 300px;
+  box-shadow: 2px 0px 6px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 0px 6px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 6px 2px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.button-card {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+
+  align-items: center;
+}
+
+.edit-movie,
+.delete-movie {
+  display: flex;
+  gap: 5px;
+  /* width:100%; */
+  max-width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.watch-later {
+  background-color: black;
+  color: white;
+  /* padding: 10px; */
+  border-radius: 50%;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .dashboard {
+    max-width: 250px;
+    text-align: center;
+    /* padding-left: 15px;
+        padding-right: 15px; */
+    padding: 5px 15px;
+  }
+}

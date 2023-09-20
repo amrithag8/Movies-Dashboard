@@ -1,0 +1,27 @@
+.Home{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 40px;
+    place-items: center;
+
+}
+
+@media screen and (max-width: 950px){
+    .Home{
+   
+    grid-template-columns: 1fr 1fr;
+    
+    
+    }
+}
+
+
+
+
+@media screen and (max-width: 630px){
+    .Home{
+        grid-template-columns: 1fr;
+        
+    }
+}

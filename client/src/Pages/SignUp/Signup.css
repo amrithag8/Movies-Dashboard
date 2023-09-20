@@ -1,0 +1,69 @@
+.signup-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+    padding: 30px 0;
+   
+    margin: 5% 35%;
+    border: 2px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.gender{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; 
+    
+    
+    
+}
+.title-gender{
+    font-weight: 700;
+    font-size:large;
+    margin-bottom: 10px;
+    color: gray;
+
+}
+.gender-type{
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 8px; 
+    width: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    margin-bottom: 10px; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+h1{
+    margin-bottom: 20px; 
+    
+
+}
+
+.signup-page >input,
+.signup-page button
+{
+    margin-bottom: 20px;
+    /* margin: 10%; */
+width: 300px;
+padding: 8px;
+border-radius: 10px;
+font-weight: 700;
+font-size:medium;
+
+}
+
+.signup-page button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

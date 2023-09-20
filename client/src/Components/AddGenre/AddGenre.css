@@ -1,0 +1,41 @@
+.genre-text{
+    padding: 10px;
+}
+
+.genre-input button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.genre label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.display-genre-list{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 30px;
+    place-items: center;
+}
+
+.genre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%;
+    height: 100vh;
+    border: 2px solid black; */
+    padding: 30px;
+
+}
+
+@media screen and (max-width: 430px){
+
+    .display-genre-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}

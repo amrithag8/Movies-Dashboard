@@ -1,0 +1,80 @@
+.watch-later-page img{
+    width: 400px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.watch-later-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.watch-later-page h1{
+    color: red;
+}
+
+.watch-later-logged{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding: 5px 20px;
+    gap: 20px;
+    place-items: center;
+}
+
+.delete-icon i{
+    cursor: pointer;
+}
+.watch-later-movies{
+    width: 200px;
+    min-height: 200px;
+   box-shadow: 8px 7px 10px -1px rgba(0,0,0,0.73);
+   -webkit-box-shadow: 8px 7px 10px -1px rgba(0,0,0,0.73);
+   -moz-box-shadow: 8px 7px 10px -1px rgba(0,0,0,0.73);
+   padding: 15px;
+   border-radius: 10px;
+}
+.watch-later-movies img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.watch-later-movies h3{
+    text-align: center;
+}
+.watch-later-genreList{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.delete-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 890px){
+    .watch-later-logged{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 460px){
+    .watch-later-logged{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 790px){
+.watch-later-page{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1px;
+}
+}

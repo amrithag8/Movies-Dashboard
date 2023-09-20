@@ -1,0 +1,44 @@
+.login-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+   
+    margin: 5% 35%;
+    border: 2px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+p{
+    margin-bottom: 10px; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+h1{
+    margin-bottom: 20px; 
+    
+
+}
+
+.login-page input,
+.login-page button
+{
+    margin-bottom: 20px;
+    /* margin: 10%; */
+width: 300px;
+padding: 8px;
+border-radius: 10px;
+font-weight: 700;
+font-size:medium;
+
+}
+
+.login-page button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
