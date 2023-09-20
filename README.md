@@ -47,6 +47,22 @@ Working video
 https://github.com/amrithag8/Movies-Dashboard/assets/127708115/92798b4d-fb4d-4ee4-a21b-1a18096aa95e
 
 
+TECHNOLOGIES USED
+
+React Js
+React Tostify
+React Router
+React Context
+Node js
+Express Js
+Mongoose
+CSS
+axios
+JWT
+Bcrypt
+CORS
+
+
 
 
 
