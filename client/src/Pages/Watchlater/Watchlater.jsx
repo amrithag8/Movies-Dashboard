@@ -1,14 +1,16 @@
 
 import "./Watchlater.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 import { axiosInstance } from "../../utils/interceptor";
 import { Header } from "../../Components/Header/Header";
+import { Moviecontext } from "../../App";
+
 export const Watchlater=()=>{
 
     const[favMovies, setfavMovies]=useState([]);
     // const abortController = useRef(new AbortController());
 
-
+const {genreList}=useContext(Moviecontext);
     const fetchWatchLater=async()=>{
 try {
     const response=await axiosInstance(`/watch-later`);
@@ -43,7 +45,7 @@ setfavMovies(response.data);
 
     return(
         <>
-        <Header/>
+        <Header genreList={genreList}/>
        {
         
         (!localStorage.getItem("token")?(<div className="watch-later-page">

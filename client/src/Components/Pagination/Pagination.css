@@ -1,0 +1,26 @@
+.Pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.pages{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.pages h3{
+    margin-top: 7px;
+}
+
+.pages:hover{
+    background-color: white;
+    color: black;
+}

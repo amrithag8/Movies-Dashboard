@@ -10,6 +10,7 @@ export const Dashboard = ({
   title,
   genre,
   setMovies
+  
 }) => {
   const navigate = useNavigate();
 
@@ -55,7 +56,7 @@ export const Dashboard = ({
   const starHandler = () => {
     const row = [];
     for (var i = 0; i < rate; i++) {
-      row.push(<i className="fa-solid fa-star"></i>);
+      row.push(<i className="fa-solid fa-light fa-star"></i>);
     }
 
     return row;

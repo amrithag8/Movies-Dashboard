@@ -114,7 +114,7 @@ const[update, setUpdate]=useState(false);
     return(
         <>
 
-        <Header/>
+        <Header genreList={genreList}/>
         
         <div className="genre">
 <label>Add Genre</label>

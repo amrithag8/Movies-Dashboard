@@ -44,7 +44,7 @@ Navigate("/movies-dashboard");
 <input type="password" placeholder="Password" onChange={(e)=>setloginPass(e.target.value)}/>
 <button onClick={loginHandler}>Submit</button>
 <p><Link to="/signup">Not registered yet? Sign Up</Link></p>
-<p>Forgot Password</p>
+<p><Link to="/forgot-password">Forgot Password</Link></p>
 <Link to="/movies-dashboard"><p>Back to Home</p></Link>
         </div>
         

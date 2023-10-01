@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const User = require("../models/userModel");
+const SendEmail = require("../utils/sendEmail");
 const {
   generateHashedPassword,
   compareHashedPassword,
@@ -84,3 +85,40 @@ exports.removeFromWatchlater = async (req, res) => {
 
   res.json(deletedArr.movies);
 };
+
+exports.forgotPassword = async (req, res) => {
+  const { userEmail } = req.body;
+  const isExist = await User.findOne({ email: userEmail });
+  if (!isExist) {
+    return res.status(400).json({ message: "The email is invalid" });
+  }
+
+  let otp="";
+  for(let i=0; i<4; i++){
+    otp=otp+Math.floor(Math.random()*10);
+  }
+
+  
+  SendEmail(userEmail, otp);
+  res.status(200).json({ message: `OTP sent to ${userEmail} successfully`, otp:otp, email:userEmail });
+};
+
+exports.verifyotp=async(req, res)=>{
+const{otp, email, receivedotp}=req.body;
+
+if(otp===receivedotp){
+ return res.status(200).json({message:"OTP verified succesfully"});
+}
+res.status(400).json({message:"OTP does not match"});
+}
+
+exports.resetPassword=async(req, res)=>{
+const{verifiedEmail,newPassword}=req.body;
+const hashPassword=await generateHashedPassword(newPassword);
+const userValid=await User.findOneAndUpdate({email:verifiedEmail}, {password:hashPassword});
+// console.log("hashPassword", hashPassword);
+// console.log("userValid", userValid);
+
+res.status(200).json({message:"Password reset successfull"});
+
+}

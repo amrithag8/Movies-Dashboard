@@ -15,10 +15,18 @@ import { Route, Routes } from "react-router-dom";
 import { Signup } from "./Pages/SignUp/Signup";
 import { Watchlater } from "./Pages/Watchlater/Watchlater";
 import { ProtectedRouteAfterLogin } from "./Components/ProtectedRouteAfterLogin";
+import { ForgotPass } from "./Pages/ForgotPassword/ForgotPass";
+import { OnetimePassword } from "./Pages/OnetimePassword/OnetimePassword";
+import { ResetPass } from "./Pages/ResetPassword/ResetPass";
 export const Moviecontext=createContext();
 function App() {
   const [movies, setMovies] = useState([]);
   const [genreList, setGenreList] = useState([]);
+  const[selectedstar, setSelectedstar]=useState([]);
+  const[selectedGenres, setSelectedGenres]=useState([]);
+  const[verifiedEmail, setVerifiedEmail]=useState("");
+    const[otp, setotp]=useState();
+
   
 
 
@@ -32,6 +40,7 @@ function App() {
       
     };
 
+    
     fetchMovies();
   }, []);
 
@@ -69,13 +78,21 @@ function App() {
         <Route path="/watchlater" element={<Watchlater />} />
 
         <Route element={<ProtectedRouteAfterLogin />}>
+          <Route path="/verify-otp" element={<OnetimePassword otp={otp} verifiedEmail={verifiedEmail}/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/reset-password" element={<ResetPass verifiedEmail={verifiedEmail}/>} />
+          <Route
+          path="/forgot-password"
+          element={
+            <ForgotPass setVerifiedEmail={setVerifiedEmail} setotp={setotp}/>
+          }
+        />
         </Route>
 
         <Route
           path="/movies-dashboard"
-          element={<HomePage movies={movies} setMovies={setMovies} />}
+          element={<HomePage movies={movies} setMovies={setMovies} genreList={genreList} selectedstar={selectedstar} setSelectedstar={setSelectedstar} selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres}/>}
         />
       </Routes>
       <ToastContainer/>

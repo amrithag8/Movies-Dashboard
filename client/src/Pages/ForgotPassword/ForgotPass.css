@@ -1,0 +1,35 @@
+.Forgot-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  min-height: 300px;
+
+  margin: 10% 35%;
+  border: 2px solid;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+h3,
+h4 {
+  margin-bottom: 30px;
+}
+
+.Forgot-page input,
+.Forgot-page button {
+  margin-bottom: 20px;
+  /* margin: 10%; */
+  width: 300px;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.Forgot-page button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

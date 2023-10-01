@@ -11,8 +11,9 @@
   border-radius: 5px;
 }
 
-.fa-star {
+.fa-light {
   color: #f5c71a;
+  cursor: default;
 }
 
 .genres-title {
@@ -37,6 +38,10 @@
   text-align: center;
   line-height: 6px;
   padding: 10px;
+}
+
+.genres-list p{
+  text-decoration: none;
 }
 
 .dashboard h2 {

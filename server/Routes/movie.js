@@ -8,6 +8,8 @@ const {
   deleteMovie,
   getMovieByID,
   editMovies,
+  getByGenre,
+  getByRating
 } = require("../controllers/movieController");
 
 const storage = multer.diskStorage({
@@ -26,6 +28,10 @@ const upload = multer({ storage: storage });
 Router.post("/api/movies", upload.single("movie_img"), postMovies);
 
 Router.get("/", getAllMovies);
+
+Router.get("/api/movies", getByGenre);
+
+Router.get("/api/movies/ratings", getByRating);
 
 Router.delete("/api/movies", deleteMovie);
 

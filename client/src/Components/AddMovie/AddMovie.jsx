@@ -132,7 +132,7 @@ const[imagePreview, setimagePreview]=useState();
   return (
 
     <>
-    <Header/>
+    <Header genreList={genreList}/>
     <div className="add-movie-page">
     <div className="add-movie">
       <h2>Add Movie</h2>
