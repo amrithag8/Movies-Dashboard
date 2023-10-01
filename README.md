@@ -46,6 +46,16 @@ Working video
 
 https://github.com/amrithag8/Movies-Dashboard/assets/127708115/92798b4d-fb4d-4ee4-a21b-1a18096aa95e
 
+Final version of the Movie Dashboard contains options for users to search movies with genres and with ratings. Also pagination is also added for better user experience. 
+
+Pagination, genre & ratings filter, forgot password video:
+
+
+
+https://github.com/amrithag8/Movies-Dashboard/assets/127708115/e4a1b605-0dfc-45c2-bb68-d27b2ca33aa4
+
+
+
 
 TECHNOLOGIES USED
 
@@ -56,6 +66,7 @@ React Context
 Node js
 Express Js
 Mongoose
+Nodemailer
 CSS
 axios
 JWT
